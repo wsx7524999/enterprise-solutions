@@ -1,0 +1,191 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "metadata": {
+    "repository": {
+      "name": "enterprise-solutions",
+      "fullName": "wsx7524999/enterprise-solutions",
+      "description": "A curated list of open source software that can be used in enterprise environments",
+      "url": "https://github.com/wsx7524999/enterprise-solutions",
+      "homepage": "https://github.com/wsx7524999/enterprise-solutions",
+      "type": "curated-list",
+      "visibility": "public"
+    },
+    "project": {
+      "title": "Open Source Enterprise Solutions",
+      "purpose": "To provide a comprehensive, curated collection of open source enterprise-grade solutions across various categories",
+      "scope": "Enterprise software solutions including CRM, ERP, file storage, security, communication, and infrastructure management tools",
+      "target_audience": [
+        "Enterprise IT Teams",
+        "System Administrators",
+        "DevOps Engineers",
+        "Technology Decision Makers",
+        "Open Source Enthusiasts"
+      ],
+      "keywords": [
+        "enterprise",
+        "open-source",
+        "self-hosted",
+        "business-solutions",
+        "cloud-alternatives",
+        "privacy-focused",
+        "curated-list"
+      ]
+    },
+    "categories": {
+      "count": 11,
+      "list": [
+        {
+          "name": "Password Manager",
+          "description": "Secure password storage and management solutions"
+        },
+        {
+          "name": "Mail",
+          "description": "Email services and webmail clients"
+        },
+        {
+          "name": "Virtual Machines",
+          "description": "Virtualization and container management platforms"
+        },
+        {
+          "name": "VPN",
+          "description": "Virtual Private Network solutions for secure connections"
+        },
+        {
+          "name": "File Storage & Sharing",
+          "description": "Self-hosted file storage, sync, and collaboration platforms"
+        },
+        {
+          "name": "Scheduling & Time Management",
+          "description": "Calendar and scheduling applications"
+        },
+        {
+          "name": "Human Resources Management",
+          "description": "HR information systems and talent management"
+        },
+        {
+          "name": "Backups",
+          "description": "Data backup and recovery solutions"
+        },
+        {
+          "name": "Low-Code No-Code",
+          "description": "Workflow automation and low-code platforms"
+        },
+        {
+          "name": "User Management",
+          "description": "Authentication and user management systems"
+        },
+        {
+          "name": "Server Management",
+          "description": "Server configuration and monitoring tools"
+        }
+      ]
+    },
+    "solutions": {
+      "total_count": 19,
+      "data_source": "assets/solutions.json",
+      "structure": {
+        "name": "Solution name",
+        "url": "Official website",
+        "description": "Brief description of the solution",
+        "category": "Category index reference",
+        "github": "GitHub organization or repository path"
+      }
+    },
+    "technology": {
+      "languages": [
+        "TypeScript",
+        "JSON"
+      ],
+      "package_manager": "pnpm",
+      "runtime": "Node.js",
+      "dependencies": {
+        "production": {
+          "ajv": "JSON schema validator",
+          "ajv-formats": "Format validation for AJV",
+          "jsonschema": "JSON schema validation"
+        },
+        "development": {
+          "@types/node": "TypeScript type definitions for Node.js",
+          "only-allow": "Enforces use of pnpm package manager",
+          "tsx": "TypeScript execution engine"
+        }
+      }
+    },
+    "scripts": {
+      "validate": {
+        "command": "pnpm validate",
+        "description": "Validates solutions.json against the schema"
+      },
+      "readme": {
+        "command": "pnpm readme",
+        "description": "Generates README.md from solutions.json and README.template.md"
+      }
+    },
+    "structure": {
+      "assets": {
+        "path": "assets/",
+        "description": "Contains data files and templates",
+        "files": {
+          "solutions.json": "Main data file containing all enterprise solutions",
+          "schema.json": "JSON schema for validating solutions data structure",
+          "README.template.md": "Template file for generating the main README"
+        }
+      },
+      "src": {
+        "path": "src/",
+        "description": "Source code for validation and README generation scripts",
+        "files": {
+          "validate.ts": "Script to validate solutions.json",
+          "readme.ts": "Script to generate README.md from template"
+        }
+      }
+    },
+    "contributing": {
+      "guide": "CONTRIBUTING.md",
+      "process": [
+        "Fork the repository",
+        "Create a new branch",
+        "Edit assets/solutions.json",
+        "Install pnpm and dependencies",
+        "Run validation script",
+        "Create a pull request"
+      ],
+      "requirements": {
+        "package_manager": "pnpm (only-allow enforced)",
+        "validation": "Must pass schema validation before submitting PR"
+      }
+    },
+    "license": {
+      "type": "CC0 1.0 Universal",
+      "full_name": "CC0 1.0 Universal (CC0 1.0) Public Domain Dedication",
+      "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "permissions": [
+        "Commercial use",
+        "Modification",
+        "Distribution",
+        "Private use"
+      ],
+      "conditions": [],
+      "limitations": [
+        "No warranty",
+        "No liability",
+        "No trademark use"
+      ]
+    },
+    "affiliation": {
+      "note": "This repository is not associated with nor affiliated with any of the listed solutions",
+      "purpose": "Independent curation for community benefit"
+    },
+    "maintenance": {
+      "status": "active",
+      "update_frequency": "Community-driven",
+      "quality_assurance": [
+        "JSON schema validation",
+        "Automated README generation",
+        "Community review process"
+      ]
+    },
+    "version": "1.0.0",
+    "last_updated": "2025-12-25"
+  }
+}
