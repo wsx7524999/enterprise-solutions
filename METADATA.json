@@ -99,10 +99,16 @@
       "package_manager": "pnpm",
       "runtime": "Node.js",
       "dependencies": {
-        "ajv": "JSON schema validator",
-        "ajv-formats": "Format validation for AJV",
-        "jsonschema": "JSON schema validation",
-        "tsx": "TypeScript execution engine"
+        "production": {
+          "ajv": "JSON schema validator",
+          "ajv-formats": "Format validation for AJV",
+          "jsonschema": "JSON schema validation"
+        },
+        "development": {
+          "@types/node": "TypeScript type definitions for Node.js",
+          "only-allow": "Enforces use of pnpm package manager",
+          "tsx": "TypeScript execution engine"
+        }
       }
     },
     "scripts": {
